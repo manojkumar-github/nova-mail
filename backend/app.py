@@ -30,8 +30,8 @@ CORS(app, resources={
     r"/api/*": {
         "origins": [
             "http://localhost:3000",
-            "https://nova-mail.onrender.com/",  # Local development
-            "https://*.onrender.com",  # Render frontend
+            "https://nova-mail.onrender.com",  # Remove trailing slash
+            "https://*.onrender.com",
             os.environ.get('FRONTEND_URL', 'http://localhost:3000')
         ]
     }
