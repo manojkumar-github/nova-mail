@@ -6,7 +6,7 @@ python-dotenv==1.0.0
 Werkzeug==3.0.1
 
 # PostgreSQL (REQUIRED)
-psycopg2-binary==2.9.9
+psycopg2-binary
 
 # Production server (REQUIRED)
 gunicorn==21.2.0
