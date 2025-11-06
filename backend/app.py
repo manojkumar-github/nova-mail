@@ -29,7 +29,8 @@ db = SQLAlchemy(app)
 CORS(app, resources={
     r"/api/*": {
         "origins": [
-            "http://localhost:3000",  # Local development
+            "http://localhost:3000",
+            "https://nova-mail.onrender.com/",  # Local development
             "https://*.onrender.com",  # Render frontend
             os.environ.get('FRONTEND_URL', 'http://localhost:3000')
         ]
